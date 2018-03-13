@@ -6,5 +6,5 @@ rm /etc/nginx/sites-{available,enabled}/default
 rm -f /var/www/html/index.nginx-debian.html
 
 # Setup nginx config and restart it
-ln -s /etc/nginx/sites-{available,enabled}/www.fps.dev
+ln -s /etc/nginx/sites-{available,enabled}/$APP_DOMAIN
 service nginx reload
